@@ -179,7 +179,10 @@ def login_form():
     if 'email' in session:
         return redirect(url_for('root'))
     else:
+
         return render_template('login.html', error='')
+         return render_template('login.html', error='')
+
 
 @app.route("/login", methods = ['POST', 'GET'])
 def login():
